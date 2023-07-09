@@ -1,7 +1,5 @@
 'use client'
 import Blogs from './blog/page'
-import Post from './posts/post'
-import { useState } from 'react'
 import Header from './header/page'
 export default function Home() {
   return (
