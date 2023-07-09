@@ -50,7 +50,11 @@ function Blogs() {
 					<MainSkeleton />
 				)}
 			</div>
-			<p className='text-black ml-4 text-2xl font-bold'>Latest news</p>
+			{data.length > 0 ? (
+				<p className='text-black ml-4 text-2xl font-bold'>Latest news</p>
+			) : (
+				<div className='bg-gray-300 h-10 w-52'></div>
+			)}
 			<InfiniteScroll
 				dataLength={data.length}
 				next={handleLoadMore}
